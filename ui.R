@@ -21,6 +21,7 @@ shinyUI(fluidPage(
                   min = min(dataset$timeID),
                   max =  max(dataset$timeID),
                   value = 1, 
+                  step=1,
                   animate = animationOptions(interval = 1000, loop = TRUE,
                                                         playButton = "let's Play", 
                                                         pauseButton = "That's enough" )
