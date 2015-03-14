@@ -24,15 +24,11 @@ shinyServer(function(input, output) {
                   weight = 1,
                   fillColor = ~palF( bikesBin ), fillOpacity = 0.6,
                   color     = ~palF( freeBin  ), opacity = 1 )
-   
-                       
                                   })
   
   output$myDT <- renderDataTable({
     datatable(dataset, options = list(iDisplayLength = 5))
                    })
-  
-  
   
   
 

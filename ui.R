@@ -18,8 +18,8 @@ shinyUI(fluidPage(
     sidebarPanel(
       sliderInput("Steps",
                   "Number of Steps:",
-                  min = min(bici.df$timeID),
-                  max =  max(bici.df$timeID),
+                  min = min(dataset$timeID),
+                  max =  max(dataset$timeID),
                   value = 1, 
                   animate = animationOptions(interval = 1000, loop = TRUE,
                                                         playButton = "let's Play", 
