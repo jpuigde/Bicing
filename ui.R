@@ -23,8 +23,8 @@ shinyUI(fluidPage(
                   value = 1, 
                   step=1,
                   animate = animationOptions(interval = 1000, loop = TRUE,
-                                                        playButton = "let's Play", 
-                                                        pauseButton = "That's enough" )
+                                                        playButton =  icon(name = "fa-bicycle", lib = "font-awesome"), 
+                                                        pauseButton =  icon(name = "fa-stop", lib = "font-awesome") )
                   )
       
     ),
